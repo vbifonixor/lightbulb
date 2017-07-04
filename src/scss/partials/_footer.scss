@@ -1,0 +1,102 @@
+/**
+ * Footer styles
+**/
+
+@media (max-width: 992px) {
+  
+  footer {
+    padding: 60px 25px;
+  }
+
+  .footer-heading {
+    margin-top: 30px
+  }
+}
+
+footer {
+  background: $black;
+  color: $white;
+  font-family: $font-family;
+  padding: 60px 0;
+}
+
+.footer-about { padding-right: 35px; }
+
+.footer-nav-menu {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.9;
+  list-style: none;
+  padding: 0;
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited,
+  a:focus {
+    color: $white;
+    text-decoration: none;
+  }
+
+  .footer-nav-submenu {
+    font-weight: 400;
+    list-style: none;
+    padding: 3px 0;
+    padding-left: 20px;
+  }
+
+}
+
+.footer-cta {
+  .lightbulb-btn-primary {
+    margin-top: 30px;
+  }
+}
+
+.footer-heading {
+  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.footer-p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.footer-twitter-post {
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  font-size: 12px;
+  padding: 20px;
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited,
+  a:focus {
+    color: $twitter;
+    text-decoration: none;
+  }
+
+  p {
+    line-height: 1.9;
+    margin-bottom: 0;
+
+    b {
+      font-weight: 400;
+    }
+
+  }
+}
+
+.footer-twitter-post-heading {
+  display: block;
+  margin-bottom: 10px;
+
+  .fa-twitter {
+    color: $twitter;
+  }
+
+}

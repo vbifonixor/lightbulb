@@ -1,0 +1,127 @@
+/**
+ * Pricing table section styles
+**/
+
+.plans {
+  margin-top: 60px;
+}
+
+.plan {
+  background-color: $white;
+  border: 1px solid rgba($pinky, .7);
+  font-family: $font-family;
+  margin-bottom: 25px;
+  padding: 30px;
+
+  .plan-line {
+    background: rgba($pinky, .41);
+    height: 1px;
+    margin: 20px 0;
+  }
+
+  .plan-heading {
+    font-size: 22px;
+    font-variant: small-caps;
+    font-weight: 800;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .plan-price {
+    color: $pinky;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+
+    .before-text {
+      font-size: 20px;
+    }
+
+    .dollar-sign {
+      font-size: 25px;
+    }
+
+  }
+
+  .plan-price-annotation {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .default-list {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 25px;
+
+    li::before {
+      height: 6px;
+      width: 6px;
+    }
+
+    li:nth-child(odd)::before { background-color: $pinky; }
+
+    li:nth-child(even)::before { background-color: $violet; }
+
+    li { margin: 10px 0; }
+
+  }
+
+}
+
+.plan-suggested {
+  border: 2px solid $violet;
+  position: relative;
+  z-index: 1000;
+
+  @media (min-width: 992px) {
+    @include scale(1.3, 1.05);
+    
+    > * {
+      @include scale((1 / 1.3), (1 / 1.05));
+    }
+    
+    .plan-price {
+      font-size: 65px;
+
+      .dollar-sign {
+        font-size: 35px;
+      }
+
+    }
+    
+    .plan-heading {
+      margin-bottom: -5px;
+    }
+    
+    .plan-price-annotation {
+      font-size: 16px;
+    }
+
+  }
+
+  .plan-line {
+    @include scale(1);
+    background: rgba($violet, .41);
+    height: 1px;
+    margin: 20px 0;
+  }
+
+  .plan-price {
+    color: $violet;
+  }
+
+}
+
+@media (min-width: 970px) and (max-width: 1200px) {
+
+  .plan .default-list {
+    padding-left: 0;
+  }
+  
+  .plan .plan-price .before-text {
+    font-size: 16px;
+  }
+
+}

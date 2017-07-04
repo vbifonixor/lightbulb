@@ -1,0 +1,66 @@
+/**
+ * Team section styles
+**/
+
+.team {
+  padding-bottom: 20px;
+
+  > .row {
+    margin: 20px 0;
+  }
+
+}
+
+.person {
+  margin-top: 20px;
+
+  img {
+    @include border-radius(100%);
+    width: 100%;
+  }
+
+  &:hover {
+
+    .person-hover {
+      opacity: 1;
+    }
+
+  }
+
+  .person-hover {
+    @extend %img-overlay;
+    @include border-radius(100%);
+    left: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+
+    .person-name {
+      font-size: 22px;
+      font-variant: small-caps;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .person-job {
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+
+    .person-email {
+      margin-bottom: -30px;
+
+      i.fa {
+        width: 20px;
+        color: $white;
+      }
+
+    }
+
+  }
+
+}
+
+.person:nth-of-type(even) .person-hover { background-color: rgba($pinky, .6); }
+
+.person:nth-of-type(odd) .person-hover { background-color: rgba($violet, .6); }

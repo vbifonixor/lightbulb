@@ -1,0 +1,83 @@
+/**
+ * Feature description sections styles
+**/
+
+.description {
+  padding: 0;
+
+@media (max-width: 992px) {
+  .flex-row {
+    flex-wrap: wrap;
+  }
+  .description-img {
+    width: 100%;
+    max-width: 100% !important;
+    order: 0 !important;
+  }
+}
+
+  .flex-row {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description-img {
+    max-width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .description-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .description-heading {
+    @extend %heading;
+    font-size: 26px;
+    font-weight: 500;
+    padding-top: 0;
+  }
+
+  .description-paragraph {
+    @extend %default-paragraph;
+    font-size: 14px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    width: 83.33333%;
+
+    li { margin: 15px 0; }
+
+  }
+
+  .description-lists {
+    display: flex;
+    padding: 20px 0;
+
+    .default-list {
+      padding: 0;
+      width: 50%;
+    }
+
+  }
+
+  .description-cta-button {
+    clear: both;
+    margin: 0 auto;
+    width: 33.333333%;
+  }
+
+}
+
+.description-reversed {
+
+  .description-img {
+    order: 2;
+  }
+
+}

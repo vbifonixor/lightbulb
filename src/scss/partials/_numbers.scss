@@ -1,0 +1,33 @@
+/**
+ * Numbers section styles
+**/
+
+.numbers {
+  background: url('../img/numbers-bg.png') no-repeat fixed 50% 0% / 100% auto;
+
+  .overlay-gradient {
+    @include reversed-gradient(.8);
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+
+  .digits {
+    color: $white;
+    font-family: $font-family;
+    text-align: center;
+
+    .digits-number {
+      display: block;
+      font-size: 52px;
+      font-weight: 300;
+    }
+
+    .digits-title {
+      font-size: 18px;
+      font-variant: small-caps;
+      font-weight: 700;
+    }
+
+  }
+
+}

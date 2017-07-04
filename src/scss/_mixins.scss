@@ -1,0 +1,24 @@
+/**
+ * SCSS mixins for gradients and input placeholder text color
+**/
+
+@mixin normal-gradient($opac: 1) {
+  @include background(linear-gradient((90deg - 14deg), rgba($violet, $opac), rgba($pinky, $opac)));
+}
+
+@mixin reversed-gradient($opac: 1) {
+  @include background(linear-gradient((90deg - 14deg), rgba($pinky, $opac), rgba($violet, $opac)));
+}
+
+@mixin lightened-gradient {
+  @include background(linear-gradient((90deg - 14deg), saturate(lighten($violet, 3%), 5%), saturate(lighten($pinky, 3%), 5%)));
+}
+
+@mixin input-placeholder {
+	/* A mixin to color the html5 placeholder text */
+  &:placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}

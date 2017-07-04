@@ -1,0 +1,82 @@
+.contacts {
+  background: url('../img/contacts-bg.png') no-repeat fixed 50% 0% / 100% auto;
+  color: $white;
+  font-family: $font-family;
+
+  .overlay-gradient {
+    @include reversed-gradient(.8);
+  }
+
+  .row {
+    margin: 80px 0;
+  }
+
+}
+
+/**
+ * Contacts section styles
+**/
+
+.contacts-info {
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+
+  .contacts-info-icon {
+    text-align: center;
+  }
+
+  .contacts-info-heading {
+    font-size: 24px;
+    font-variant: small-caps;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .contacts-info-p {
+    font-size: 18px;
+
+    a {
+
+      &:link,
+      &:focus,
+      &:hover,
+      &:visited,
+      &:active {
+        color: $white;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+}
+
+.contacts-form {
+
+  input:not([type=submit]),
+  textarea {
+    @include border-radius(16px);
+    background: transparent;
+    border: 2px solid $white;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px 0;
+    outline: none;
+
+    @include input-placeholder {
+      color: $white;
+    };
+
+  }
+
+  input:not([type=submit]) { height: 32px; }
+
+  textarea {
+    height: 160px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+  }
+
+}

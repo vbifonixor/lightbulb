@@ -1,0 +1,64 @@
+/**
+ * Customer's reviews section styles
+**/
+
+.reviews {
+  background: url('../img/reviews-bg.png') no-repeat fixed 50% 0% / 100% auto;
+
+  .overlay-gradient {
+    @include normal-gradient(.8);
+  }
+
+  .section-heading-white {
+    margin-bottom: 40px;
+  }
+
+  .flex-row {
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+
+  .reviews-slider-arrow {
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgba($white, .8);
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+  }
+
+}
+
+.review {
+  @include box-shadow(3px 4px 10px 0 rgba($black, .17));
+  align-items: center;
+  background: url('../img/svg/left197.svg') no-repeat 50px 40px / 65px, url('../img/svg/right194.svg') no-repeat calc(100% - 50px) calc(100% - 40px) / 65px, rgba($white, .8);
+  display: flex !important;
+  flex-direction: column;
+  font-family: $font-family;
+  justify-content: space-around;
+  margin: 0 20px;
+  padding: 75px 0 60px;
+
+  .review-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    width: 60%;
+  }
+
+  .review-author {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: right;
+    width: 70%;
+
+    strong {
+      font-weight: 700;
+    }
+
+  }
+
+}

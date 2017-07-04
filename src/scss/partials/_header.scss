@@ -1,0 +1,28 @@
+.header {
+	color: $black;
+	padding-bottom: 60px;
+
+	i.page-icon {
+		text-align: center;
+		color: rgba($black, .7);
+		margin-top: 60px;
+	}
+
+	h2.page-heading {
+		text-align: center;
+		font-family: $font-family;
+		font-weight: 800;
+		margin-bottom: 0;
+	}
+
+	h3.page-subheading {
+		text-align: center;
+		font-family: $font-family;
+		font-size: 16px;
+		margin-top: 10px;
+	}
+}
+
+.hero.hero-small {
+	background: url('../img/header-bg.jpg');
+}

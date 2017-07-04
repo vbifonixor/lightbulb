@@ -1,0 +1,61 @@
+/**
+ * Feature icon box section styles
+**/
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  padding: 35px;
+  text-align: center;
+
+  .feature-image {
+    @include border-radius(100%);
+    @include transition(1s ease all);
+    align-items: center;
+    border: 1px solid $pinky;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    width: 130px;
+    
+    i.fa {
+      width: 65px;
+      @include transition(1s ease all);
+      color: $pinky;
+    }
+
+    &:hover {
+      background-color: $pinky;
+
+       i.fa {
+         color: $white;
+       }
+
+    }
+
+  }
+
+  .feature-heading {
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+
+  .feature-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+}
+
+.features {
+  padding-bottom: 40px;
+
+   .flex-row {
+    flex-wrap: wrap;
+  }
+
+}

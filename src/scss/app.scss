@@ -1,0 +1,63 @@
+/**
+ * ----------------------
+ * ----------------------
+ * Lightbulb - multipurpose landing page HTML5 template. 
+ * Made by Mikhail Kononenko.
+ * 2016
+ * ----------------------
+ * ----------------------
+**/
+
+
+/**
+ * ----------------------
+ * Vendor scss/css: 
+ * ----------------------
+**/
+@import 'compass'; // Compass
+@import '../../bower_components/bootstrap/dist/css/bootstrap.min.css';  // Twitter Bootstrap framework
+@import '../../bower_components/slick-carousel/slick/slick.css';  // Slick slider
+@import '../../bower_components/font-awesome/css/font-awesome.min.css';  // Font Awesome icons
+/**
+ * Google Font:
+**/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,300italic,400italic,700,700italic,900,900italic);
+// Other google fonts examples (uncomment here and replace "Oxygen" in _vars.scss to use):
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic);
+
+
+/**
+ * ----------------------
+ * General styles: 
+ * ----------------------
+**/
+@import 'vars';  // Variables
+@import 'placeholders';  // Placeholder selectors
+@import 'mixins';  // Mixins
+@import 'general';  // General
+
+
+/**
+ * ----------------------
+ * Sections styles: 
+ * ----------------------
+**/
+@import 'partials/blog'; // Blog posts
+@import 'partials/clients'; // Clients
+@import 'partials/contacts'; // Contacts
+@import 'partials/description'; // Feature descriptions
+@import 'partials/features'; // Features
+@import 'partials/footer'; // Footer
+@import 'partials/header'; // Header
+@import 'partials/hero'; // Hero (main page only)
+@import 'partials/map'; // Google map
+@import 'partials/numbers'; // Numbers
+@import 'partials/portfolio'; // Portfolio
+@import 'partials/pricing'; // Pricing
+@import 'partials/random-cta'; // Call-to-action section
+@import 'partials/reviews'; // Reviews
+@import 'partials/team'; // Team
+
+@import 'partials/portfolio-item-page';
+@import 'partials/single-post';

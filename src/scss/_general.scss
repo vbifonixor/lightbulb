@@ -1,0 +1,145 @@
+/**
+ * General template styles
+**/
+
+::selection {
+  background-color: $pinky;
+  color: $white;
+}
+
+body {
+  color: $black;
+  min-width: 480px;
+  background: $white;
+}
+
+p {
+  width: 100%;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.flex-row {
+  display: flex;
+}
+
+//Buttons
+.btn,
+.lightbulb-btn-default,
+.lightbulb-btn-primary,
+.lightbulb-btn-white {
+  @include border-radius(23px);
+  @include transition(1s ease all); //Only IE 10+ user will be able to see it :(
+  display: block;
+  font-family: $font-family;
+  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: 600;
+  height: 46px;
+  line-height: 45px;
+  outline: none;
+  text-align: center;
+
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+
+}
+
+.lightbulb-btn-default {
+  background-color: rgba($white, 0);
+  border: 1px solid $pinky;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited,
+  &:link {
+    background-color: rgba($white, .3);
+    border: 1px solid $pinky;
+    color: $pinky;
+  }
+
+}
+
+.lightbulb-btn-primary {
+  @include normal-gradient;
+  @include single-box-shadow(0, 4px, 16px, 0, rgba($pinky, .4));
+  border: 0;
+  color: $white;
+
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    color: $white;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    @include lightened-gradient;
+    border: 0;
+    color: $white;
+  }
+
+}
+
+.lightbulb-btn-white {
+  background: $white;
+  border: 0;
+  color: $violet;
+}
+
+.section-heading,
+.section-heading-white {
+  @extend %heading;
+}
+
+.section-subheading,
+.section-subheading-white {
+  @extend %subheading;
+}
+
+.section-heading-white {
+  color: $white;
+}
+
+.section-subheading-white {
+  color: $white;
+}
+
+.default-list {
+  list-style-type: none;
+
+  > li::before {
+    @include border-radius(100%);
+    content: ' ';
+    display: inline-block;
+    height: 7px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+    width: 7px;
+  }
+
+}
+
+.default-list-style-1 > li::before,
+.default-list > li::before {
+  background-color: $pinky;
+}
+
+.default-list-style-2 > li::before {
+  background-color: $violet;
+}
+
+.gradient-line {
+  @include normal-gradient(.5);
+  height: 1px;
+  margin: 60px 0;
+}

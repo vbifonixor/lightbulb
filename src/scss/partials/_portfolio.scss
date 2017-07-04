@@ -1,0 +1,85 @@
+/**
+ * Portfolio section styles
+**/
+
+.works {
+  margin-top: 40px;
+}
+
+.work {
+  padding: 0;
+
+  &:hover {
+
+    .work-hover {
+      opacity: 1;
+    }
+
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-child(odd) {
+
+    .work-hover {
+      background-color: rgba($pinky, .75);
+    }
+  }
+
+  &:nth-child(even) {
+    .work-hover {
+      background-color: rgba($violet, .75);
+    }
+  }
+
+  .work-hover {
+    @extend %img-overlay;
+
+    .work-heading {
+      font-size: 18px;
+      font-variant: small-caps;
+      font-weight: 700;
+      margin: 20px 0;
+      text-align: center;
+      width: 80%;
+      a {
+        color: $white;
+      }
+    }
+
+    .work-subheading {
+      font-size: 14px;
+      font-variant: small-caps;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+    }
+
+    .work-like-button {
+      @include border-radius(20px);
+      border: 1px solid $white;
+      cursor: pointer;
+      padding: 3px 9px;
+
+      i.fa {
+        color: $white;
+        font-size: 12px;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+
+
+      }
+
+      > span {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+    }
+
+  }
+
+}
